@@ -98,13 +98,13 @@ Welcome Styling
     font-family: 'Permanent Marker', cursive;
     font-size: 5vh;
     transform: rotate(-10deg);
-    padding: 1em;
-    margin-top: 1vh;	
+    padding: 0.75em 1em;
+    //margin-top: .25vh;	
 }
 
 
 #enterLink {
-  margin-top: auto;
+  //margin-top: auto;
   animation: 1s infinite alternate pulse;
 }
 
