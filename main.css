@@ -152,7 +152,7 @@ Section Styling
 
 
 #subWrap {
-        -webkit-grid-area: sections;
+    -webkit-grid-area: sections;
 	-ms-grid-row: 2;
 	-ms-grid-column: 1;
 	grid-area: sections;
@@ -293,7 +293,7 @@ Section Styling
 */
 
 #aboutTitleWrapper {	
-    background: url("imgs/ch2.JPG") no-repeat right;	
+    background: url("imgs/ch2.jpg") no-repeat right;	
     background-size: cover;
 }
 
