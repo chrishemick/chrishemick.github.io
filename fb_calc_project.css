@@ -11,11 +11,17 @@ General Styling
 
 
 #mainWrapper {
+  display: -webkit-grid;
+  display: -ms-grid;
   display: grid;
   width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   min-width: 320px;
   min-height: 568px;
+  -ms-grid-columns: 1fr;
+  -ms-grid-rows: 10vh 30vh (auto)[3];
   grid-template-columns: 1fr;
   grid-template-rows: 10vh 30vh minmax(400px, auto) repeat(2, auto);
   grid-template-areas:
@@ -49,9 +55,17 @@ Nav Styling
 
 header {
   grid-area: nav;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   position: fixed;
   background-color: rgb(62, 71, 79);
@@ -72,17 +86,31 @@ nav {
 
 
 nav ul {
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
   justify-content: space-around;
   height: 90%;
 }
 
 
 nav li {
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: justify;
   justify-content: space-around;
   height: 100%;
   width: 75%;
@@ -104,6 +132,38 @@ nav a {
 }
 
 
+li a, .dropbtn {
+  transition: color 1s ease-in;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+}
+
 
 /****
 Article Styling
@@ -111,9 +171,19 @@ Article Styling
 
 #projectHero {
   grid-area: hero;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #FFF;
   text-align: center;
@@ -123,11 +193,13 @@ Article Styling
 
 
 #projectHero h1 {
+  font-size: 3em; /*for MSFT Edge*/
   font-size: 4vmax;
 }
 
 
 #projectHero p {
+  font-size: 1em; /*for MSFT Edge*/
   font-size: 1.5vmax;
   padding: 10px;
 }
@@ -135,7 +207,13 @@ Article Styling
 
 #projectOverview {
   grid-area: article;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 20px auto;
   width: 90%;
@@ -169,7 +247,11 @@ Article Styling
 
 
 .subSection {
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 20px 0;
 }
@@ -179,7 +261,6 @@ Article Styling
   margin: 1em auto;
   width: 100%;
   height: 100%;
-  justify-self: center;
 }
 
 
@@ -194,6 +275,8 @@ Article Styling
   width: 45%;
   height: 50px;
   margin: 10px 0;
+  -webkit-align-self: center;
+  -ms-flex-align: center;
   align-self: center;
   border: 1px solid greenyellow;
   border-radius: 5px;
@@ -214,7 +297,13 @@ Article Styling
 
 #nextSteps {
   grid-area: next;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   width: 100%;
@@ -231,9 +320,17 @@ Article Styling
 
 
 .steps {
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: #FFF;
   margin: 1px 0;
@@ -263,9 +360,19 @@ Article Styling
 
 footer {
   grid-area: footer;
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  display: -webkit-flex;
+  display: -ms-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;	
+  -ms-flex-align: center;	
   align-items: center;	
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding: 0.5em 0; 
   width: 100%;
@@ -278,8 +385,14 @@ footer {
 
 
 #platformLogos {
+	display: -webkit-flex;
+	display: -ms-flex;
 	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
 	justify-content: space-around;
+ 	-webkit-align-items: center;	
+  	-ms-flex-align: center;
 	align-items: center;
 	width: 50%;
 }
@@ -311,13 +424,13 @@ Media Queries
 
 @media (min-width: 769px) {
 
-
   body {
     background-color: #F1F0FF;
   }
 
 
   #mainWrapper {
+    -ms-grid-columns: 1fr (2fr)[2] 1fr;
     grid-template-columns: 1fr repeat(2, 2fr) 1fr;
     grid-template-areas:
     "nav nav nav nav"
@@ -328,8 +441,19 @@ Media Queries
   }
 
 
+  header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+
+
   nav {
+    -webkit-align-self: center;
+    -ms-flex-align: center;
     align-self: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
     justify-content: space-around;
     width: 40%;
     margin-left: auto;
@@ -341,8 +465,17 @@ Media Queries
     font-size: 1em;
   }
 
+  
+  #projectHero {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+  }
+
 
   #projectOverview {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
     width: 100%;
     padding: 1em 3em;
     margin: 0 auto;
@@ -354,8 +487,16 @@ Media Queries
 
 
   #nextSteps {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
     min-height: 200px;
@@ -374,6 +515,10 @@ Media Queries
 	
 	
   footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
 	
@@ -406,6 +551,7 @@ Media Queries
 @media (min-width: 1028px) {
 
   #mainWrapper {
+    -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -238,7 +238,7 @@ Section Styling
     position: fixed;
     height: auto;
     background-color: rgba(62, 71, 79, 0.8);
-    width: 50%;
+    width: 100%;
     z-index: 2;
 }
 
@@ -441,11 +441,11 @@ Section Styling
    	-webkit-flex-direction: column;
    	-ms-flex-direction: column;	
    	flex-direction: column;	
-   	-webkit-justify-content: center;
-   	-ms-justify-content: center;
+   	-webkit-justify-content: flex-start;
+   	-ms-flex-pack: start;
    	justify-content: center;
 	-webkit-align-items: center;
-	-ms-align-items: center;	
+	-ms-flex-align: center;	
 	align-items: center;
    	width: 75%;
 	height: 90%;
@@ -455,18 +455,17 @@ Section Styling
 
 #contact label {
 	color: #FFF;
-	-webkit-align-self: flex-start;
-	-ms-align-self: flex-start;
-	align-self: flex-start;
+	text-align: left;
 	margin-top: 2vh;
+    width: 95%;
 }
 
 
-#contact input, textarea {	
+#contact input, textarea, select {	
     border: 1px dashed greenyellow;	
     border-radius: 5px;	
     font-size: 1em;
-    width: 75%;
+    width: 95%;
 }
 
 
@@ -481,7 +480,7 @@ Section Styling
     -ms-align-self: center;	
     align-self: center;	
     background-color: rgb(62, 71, 79);
-    margin-top: 2vh;
+    margin: 2vh 0;
 }
 
 
@@ -563,7 +562,7 @@ Media Queries
         "intro intro"	
         "sections sections"  
         "footer footer";
-      -ms-grid-columns: repeat(2, 1fr);
+      -ms-grid-columns: (1fr)[2];;
       -ms-grid-rows: 100vh 90vh auto;
       -ms-grid-areas:   
         "intro intro"	
@@ -716,7 +715,7 @@ Media Queries
   }
 	
 	
-  #contact li {	
+   #contact li {	
     -webkit-flex-direction: column;
     -ms-flex-direction: column;	
     flex-direction: column;		
@@ -768,7 +767,7 @@ Media Queries
     color: #FFF;
     cursor: pointer;
   }
-
+}
 
 @media (min-width: 1028px) {
 
@@ -779,7 +778,12 @@ Media Queries
     overflow: hidden;  	
   }
 
-
+	
+  #intro {
+    -ms-grid-row: 1;
+  }
+	
+	
   #logo {
     position: absolute;
     -webkit-align-self: flex-start;
@@ -837,7 +841,11 @@ Media Queries
         width: 73%;
   }
 
-
+  #footer {
+    -ms-grid-row: 3;
+  } 
+	
+	
   #platformLogos {
     width: 30%;
   }

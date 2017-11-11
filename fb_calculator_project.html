@@ -6,17 +6,23 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="fb_calc_project.css" type="text/css" rel="stylesheet">
-    <title>Chris Hemick - Web Developer - FB Audience Calculator Project Overview</title>
+    <title>Chris Hemick - Aspiring Web Developer - FB Audience Calculator Project Overview</title>
   </head>
 
   <body>
     <div id="mainWrapper">
       <header>
-        <img src="imgs/ch_logo.png" alt="logo" id="logo">
+        <a href="./index.html"><img src="imgs/ch_logo.png" alt="logo" id="logo"></a>
         <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
-            <li id="mid-li"><a href="#projects" class="active">Projects</a></li>
+            <li class="dropdown">
+              <a class="dropbtn active">Projects</a>
+                <div class="dropdown-content">
+                  <a href="#">Portfolio Site</a>
+                  <a href="#">Audience Calculator</a>
+                </div>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -25,8 +31,8 @@
     <section id="projectHero">
       <h1>Facebook Audience Calculator</h1>
       <p>
-	 A calculator designed to help an advertiser understand how their CRM audiences may translate 
-	 to Facebook.
+	 	A calculator designed to help an advertiser understand how their CRM audiences may translate 
+	 	to Facebook.
       </p>
     </section>
 
