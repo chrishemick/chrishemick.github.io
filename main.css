@@ -656,7 +656,7 @@ Media Queries
 
 
   #aboutTitleWrapper {	
-    background: url("imgs/ch2.JPG") no-repeat left;
+    background: url("imgs/ch2.jpg") no-repeat left;
     background-size: cover;
     border-right: 1px solid greenyellow;
   }
