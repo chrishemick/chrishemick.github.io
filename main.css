@@ -104,7 +104,6 @@ Welcome Styling
 
 
 #enterLink {
-  //margin-top: auto;
   animation: 1s infinite alternate pulse;
 }
 
@@ -275,7 +274,6 @@ Section Styling
 }
 
 
-
 #codingNavButton {
 	animation: 1s infinite alternate pulse;
 }
@@ -424,12 +422,11 @@ Section Styling
 #contact {   
     grid-area: contact;
     background-color: #FFF;
-    //margin: 0;
 }
 
 
 #contactTitleWrapper {
-    background: url("imgs/building_site.png") no-repeat center;
+    background: url("imgs/contact_background.png") no-repeat center;
     background-size: cover;
 }
 
@@ -671,8 +668,7 @@ Media Queries
 
 
   .section-title {		
-    font-size: 7vmax;
-    //margin: 0 1em;	
+    font-size: 7vmax;	
   }
 
 
@@ -841,6 +837,7 @@ Media Queries
         width: 73%;
   }
 
+	
   #footer {
     -ms-grid-row: 3;
   } 
