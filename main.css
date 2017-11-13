@@ -466,18 +466,26 @@ Section Styling
 }
 
 
-#contact button {
-    font-size: 1.5em;
-    color: #FFF;	
+#contact button {	
     border: 1px dashed greenyellow;	
     border-radius: 5px;	
     width: 40%;
     max-width: 150px;
     -webkit-align-self: center;
-    -ms-align-self: center;	
+    -ms-flex-align: center;	
     align-self: center;	
     background-color: rgb(62, 71, 79);
+	padding: .25em;
     margin: 2vh 0;
+	height: 5vh;
+	min-height: 50px;
+}
+
+
+#submitButtonText {
+    font-size: 3vh;
+	text-align: center;
+    color: #FFF;	
 }
 
 
