@@ -16,8 +16,11 @@ const codingTitle = document.getElementById('codingTitleWrapper');
 const titleWrapper = document.querySelectorAll('.titleWrapper')[0];
 const exitButton = document.querySelectorAll(".exit-button-wrapper");
 const contentNavButtons = document.querySelectorAll('.contentNavButtons');
+const formSubmitButton = document.getElementById('submitButton');
+const form = document.querySelector('form');
 
 
+//Hides welcome hero screen when Enter button is clicked
 enterButton.addEventListener("click", function() {
 	footer.scrollIntoView({behavior: "smooth"});
         const screen = window.screen.width;
@@ -38,9 +41,9 @@ enterButton.addEventListener("click", function() {
 });
 
 
+//Event listener to control visibility of content sections
 sections.addEventListener("click", (e) => {
       const section = e.target.id;
-	  console.log("clicked");
 	  if(section === "aboutTitleWrapper" || section === "aboutTitle") {
 	    aboutContent.className = "showContent";
 	  } else if (section === "codingTitleWrapper" || section === "codingTitle") {
@@ -55,6 +58,7 @@ sections.addEventListener("click", (e) => {
 });
 
 
+//Event Listener for exit buttons on overlay sections
 for (var i=0; i < exitButton.length; i++) {
   const parent = exitButton[i].parentNode;
   exitButton[i].addEventListener("click", (e) => {
@@ -66,6 +70,7 @@ for (var i=0; i < exitButton.length; i++) {
 };
 
 
+//Event listener for content navigation buttons
 for (var i=0; i < contentNavButtons.length; i++) {
   contentNavButtons[i].addEventListener("click", (e) => {
     const button = e.target.id;
@@ -92,3 +97,13 @@ for (var i=0; i < contentNavButtons.length; i++) {
   })
 };
 
+
+/*
+//Displays thank you message once form is submitted
+form.addEventListener("submit", function() {
+	setTimeout(() => {
+	  form.style.visibility = "hidden";
+	  contactContent.innerHTML = "<p>Thanks for the shout! I'll get back to you soon.</p>";
+	}, 2500);
+});
+*/

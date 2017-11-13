@@ -489,6 +489,14 @@ Section Styling
 }
 
 
+#contact p {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 5vh;
+	text-align: center;
+	margin: 15vh auto;
+}
+
+
 footer {  
     -webkit-grid-area: footer;
     -ms-grid-row: 3;
@@ -732,7 +740,18 @@ Media Queries
     margin-top: 15px;	
   }
 
+	
+  #submitButton:hover {	
+    background-color: greenyellow;
+	cursor: pointer;
+	color: rgb(62, 71, 79);
+  }
+	
 
+  #submitButton:hover #submitButtonText {	
+	color: rgb(62, 71, 79);
+  }
+	
   footer {
     -ms-grid-column-span: 2;
     -webkit-flex-direction: row-reverse;
