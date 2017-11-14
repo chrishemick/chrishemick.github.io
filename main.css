@@ -8,6 +8,7 @@ General Styling
     padding: 0;  
     box-sizing: border-box;  
     font-family: 'Oswald', sans-serif;
+	//scroll-behavior: smooth;
 }
 
 
@@ -229,10 +230,10 @@ Section Styling
     display: -ms-flex;
     display: flex;
     -webkit-justify-content: flex-end;
-    -ms-justify-content: flex-end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
     -webkit-align-items: center;
-    -ms-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     position: fixed;
     height: auto;
@@ -667,6 +668,7 @@ Media Queries
 	
 
   .section-title {
+	font-size: 5vmax;
     transition: 0.25s ease-in;
   }
 
@@ -680,11 +682,6 @@ Media Queries
 
   #projectsTitleWrapper {	
     border-right: 1px solid greenyellow;
-  }
-
-
-  .section-title {		
-    font-size: 7vmax;	
   }
 
 
@@ -752,6 +749,7 @@ Media Queries
 	color: rgb(62, 71, 79);
   }
 	
+	
   footer {
     -ms-grid-column-span: 2;
     -webkit-flex-direction: row-reverse;
@@ -767,7 +765,7 @@ Media Queries
 
 
   #platformLogos {
-    width: 30%;
+    width: 25%;
   }
 
   
@@ -792,6 +790,7 @@ Media Queries
   }
 }
 
+
 @media (min-width: 1028px) {
 
   #mainWrapper { 
@@ -808,10 +807,13 @@ Media Queries
 	
 	
   #logo {
-    position: absolute;
-    -webkit-align-self: flex-start;
-    -ms-align-self: flex-start;
-    align-self: flex-start;
+	height: 15vh;
+	width: 15vh;
+  }
+	
+	
+  #intro p {
+	margin-top: -5vh;	
   }
 
 
@@ -844,7 +846,7 @@ Media Queries
 
 
   .showContent {
-        margin: auto;
+    margin: auto;
 	background-color: rgba(62, 71, 79, 0.9);
 	height: 90%;
 	width: 75%;
@@ -852,16 +854,7 @@ Media Queries
 
 
   .exit-button-wrapper {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	-webkit-justify-content: flex-end;
-	-ms-justify-content: flex-end;
-	justify-content: flex-end;
-	align-items: center;
-	position: fixed;
-	height: auto;
-        width: 73%;
+    width: 74%;
   }
 
 	
@@ -871,6 +864,6 @@ Media Queries
 	
 	
   #platformLogos {
-    width: 30%;
+    width: 20%;
   }
 }

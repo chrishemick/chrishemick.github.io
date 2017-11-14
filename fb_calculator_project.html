@@ -19,11 +19,11 @@
             <li class="dropdown">
               <a class="dropbtn active">Projects</a>
                 <div class="dropdown-content">
-                  <a href="#">Portfolio Site</a>
-                  <a href="#">Audience Calculator</a>
+                  <a href="./portfolio_site_project.html">Portfolio Site</a>
+                  <a href="./fb_calculator_project.html">Audience Calculator</a>
                 </div>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="./index.html">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -31,14 +31,13 @@
     <section id="projectHero">
       <h1>Facebook Audience Calculator</h1>
       <p>
-	 	A calculator designed to help an advertiser understand how their CRM audiences may translate 
-	 	to Facebook.
+	 	The first web app created by me meant to bring together my learning with my current role.
       </p>
     </section>
 
     <section id="projectOverview">
       <article>
-        <p id="createdInfo">Created: <time datetime="2017-11-2 19:00">November 2nd, 2017</time></p>
+        <p id="createdInfo">Created: <time datetime="2017-11-8 19:00">November 8th, 2017</time></p>
         <div class="subSection" id="theWhat">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp1&nbsp</span> The What:</h2>
           <p>
@@ -50,19 +49,16 @@
         <div class="subSection" id="theHow">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp2&nbsp</span> The How:</h2>
           <p>
-            The Facebook Audience Calculator was a side project  meant to tie together my learning with 
-            my current role.  It was actually written in Python as a command line program initially.  
-            However, once I realized that I could not distribute Python to the team due to network
-            restrictions, I translated it to JavaScript and built a simple UI.
+            The Facebook Audience Calculator was a side project which was initially written in Python as a command 
+			line program.  However, I wanted additional practice with JavaScript so I translated it and built a simple UI.
           </p>
 
           <img src="imgs/fb_calc_excel.png" alt="Excel ScreenShot" id="excelScreenshot">
 
           <p>
-            Above you see the origination of the calculator, a boring Excel-based solution.  While
-            it did the job, it was not very user-friendly and not very dynamic.  My goal was to set 
-            out to create something more visually pleasing, easier to follow and something the sales 
-            team could potentially use in client conversations.
+            Above you see the origination of the calculator, a basic Excel-based solution. While it did the job, it was not 
+			very user-friendly and not all that dynamic. My goal was to set out to create something more visually pleasing and
+			easier to follow.
           </p>
 
         </div>
@@ -70,18 +66,33 @@
         <div class="subSection" id="result">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp3&nbsp</span> The Result:</h2>
           <p>
-            After sharing the calculator with some team members in passing, I was encouraged to present
-            the app at a monthly meeting I host with the Executive &amp; Management team.  The feedback has
-            been positive and we are currently identifying the best way to bring it into the daily workflow of 
-            the wider team. 
+            With one click, the app calculates how many impressions an advertiser could potentially serve to their audience in a 30 
+			day campaign.  The user can then click to see the full details of how the calculation was done, with the option to adjust 
+			variables such as campaign length, frequency capping and others.  If any adjustments are made, the estimated impressions 
+			automatically recalculate based on the new parameters. 
           </p>
           <img src="imgs/liveCalcScreenshot.png" alt="App Screenshot">
           <p>
-            Looking ahead, I will be making improvements to the app, including the ability to forecast
-            costs.  Keep an eye out for new changes!
+            The app can be improved by adding additional features/functionality such as preventing the user from entering a match rate 
+			higher than 100%, adding an additional step for forecasting costs, and smoother transitions. 
           </p>
-          <button type="button"><a href="https://theevolvingch.github.io/FB-Calculator/">See it in Action</a></button> 
-          <button type="button"><a href="">View the Source Code</a></button>
+          <button type="button"><a href="https://theevolvingch.github.io/FB-Calculator/" target="_blank">See it in Action</a></button> 
+          <button type="button"><a href="https://github.com/TheEvolvingCH/FB-Calculator" target="_blank">View the Source Code</a></button>
+        </div>
+		  
+		<div class="subSection" id="challenges">
+          <h2 class="section-subheader"><span class="stepNumbers">&nbsp4&nbsp</span> Challenges:</h2>
+          <p>
+          	One of the toughest parts of this project for me was control flow on the full details page.  It was important to provide the 
+			user the controls to modify the data, make sure it was captured correctly, and to highlight error messages in the appropriate 
+			areas when needed.  To tackle this, I tried to break down the process into smaller pieces.  First, dynamically populating the 
+			elements in each section, then handling the Edit/Save button features, and then the Reset button.<br><br>
+ 
+			This was also my first time using CSS Grid, which is a great tool, but delayed development as I was learning on the fly.<br><br>
+ 
+			While there are things I would have done differently in retrospect, I am happy with the path of this project as it helped me push 
+			forward and apply new skills.
+          </p>
         </div>
       </article>
 
@@ -90,7 +101,7 @@
     <section id="nextSteps">
       <h1>What Next?</h1>
       <div class="steps" id="portfolioSiteLink">
-        <a href="">
+        <a href="./portfolio_site_project.html">
           <h2 class="section-subheader">See the Story Behind My Portfolio Site</h2>
         </a>
       </div>
