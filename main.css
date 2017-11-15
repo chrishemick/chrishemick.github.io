@@ -12,7 +12,6 @@ General Styling
 }
 
 
-
 @-webkit-keyframes pulse {
     from { transform: scale(1); }
     to   { transform: scale(1.25); }
@@ -23,7 +22,6 @@ General Styling
     from { transform: scale(1); }
     to   { transform: scale(1.25); }
 }
-
 
 
 #mainWrapper { 
@@ -68,16 +66,16 @@ Welcome Styling
   grid-area: intro;
   height: 100%;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column; 
   -ms-flex-direction: column; 
   flex-direction: column; 
   -webkit-align-items: center; 
-  -ms-align-items: center; 
+  -ms-flex-align: center; 
   align-items: center;  
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start; 
   text-align: center;
   color: #FFF;
@@ -157,7 +155,7 @@ Section Styling
 	-ms-grid-column: 1;
 	grid-area: sections;
 	display: -webkit-flex;
-	display: -ms-flex;
+	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
@@ -170,13 +168,13 @@ Section Styling
 
 .titleWrapper {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-    -ms-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-justify-content: center;
-    -ms-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -227,7 +225,7 @@ Section Styling
 
 .exit-button-wrapper {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: flex-end;
     -ms-flex-pack: end;
@@ -252,19 +250,20 @@ Section Styling
     display: -webkit-flex;
     display: -ms-flex;
 	display: flex;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 
 .mobileNavButton {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-webkit-align-items: center;
-	-ms-align-items: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -340,13 +339,13 @@ Section Styling
     padding: 5px 10px;
     margin: 1em 0;
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-justify-content: space-around;
-    -ms-justify-content: space-around;
+    -ms-flex-pack: justify;
     justify-content: space-around;
     list-style-type: none;
 }
@@ -361,7 +360,7 @@ Section Styling
 
 #featuredProjectLayout {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -387,10 +386,10 @@ Section Styling
     -ms-flex-direction: column;	
     flex-direction: column;
    -webkit-align-items: center;
-   -ms-align-items: center;	
+   -ms-flex-align: center;	
     align-items: center;
     -webkit-justify-content: center;
-    -ms-justify-content: center;	
+    -ms-flex-pack: center;	
     justify-content: center;	
     width: 100%;		
     color: #FFF;
@@ -434,7 +433,7 @@ Section Styling
 
 #contact form {	
     display: -webkit-flex;
-    display: -ms-flex;	
+    display: -ms-flexbox;	
    	display: flex;
    	-webkit-flex-direction: column;
    	-ms-flex-direction: column;	
@@ -504,16 +503,16 @@ footer {
     -ms-grid-column: 1;
     grid-area: footer;
     display: -webkit-flex;
-    display: -ms-flex;	
+    display: -ms-flexbox;	
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-align-items: center;
-    -ms-align-items: center;
+    -ms-flex-align: center;
     align-items: center;	
     -webkit-justify-content: center;
-    -ms-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding: 0.5em 0;   
     font-family: 'Permanent Marker', cursive;
@@ -527,13 +526,13 @@ footer {
 
 #platformLogos {
     display: -webkit-flex;
-    display: -ms-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-around;
-    -ms-justify-content: space-around;
+    -ms-flex-pack: justify;
     justify-content: space-around;
     -webkit-align-items: center;
-    -ms-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 50%;
 }
@@ -577,11 +576,7 @@ Media Queries
         "sections sections"  
         "footer footer";
       -ms-grid-columns: (1fr)[2];;
-      -ms-grid-rows: 100vh 90vh auto;
-      -ms-grid-areas:   
-        "intro intro"	
-        "sections sections"  
-        "footer footer";		
+      -ms-grid-rows: 100vh 90vh auto;		
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 100vh 90vh auto;
       grid-template-areas:   
@@ -594,7 +589,7 @@ Media Queries
   #intro {
     -ms-grid-column-span: 2;
     -webkit-justify-content: center;
-    -ms-justify-content: center;	
+    -ms-flex-pack: center;	
     justify-content: center;
     width: 100%;
     z-index: 1; 
@@ -647,8 +642,8 @@ Media Queries
 
 
   .section-wrapper {		
-      height: 100%;
-      background-color: #FFF;	
+    height: 100%;
+    background-color: #FFF;	
   }
 
 
@@ -664,6 +659,7 @@ Media Queries
     border-radius: 5px;
     cursor: pointer;
     z-index: 100;
+	transform-origin: 50.01%; /*fixes choppy transitions in Microsoft*/
 }
 	
 

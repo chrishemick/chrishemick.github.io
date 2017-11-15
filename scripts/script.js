@@ -2,26 +2,31 @@
 
 
 console.log("I'm linked");
-const mainWrapper = document.querySelector('#mainWrapper');
+
+/****
+changed some elements to var to address issues in Safari with 
+const variable name being same as html ID
+****/
+var mainWrapper = document.querySelector('#mainWrapper');
 const introSection = document.querySelector('#intro');
 const enterButton = document.querySelector('#enterLink');
-const footer = document.getElementById('footer');
+var footer = document.getElementById('footer');
 const sections = document.querySelector('#subWrap');
-const aboutContent = document.getElementById('aboutContent');
-const codingContent = document.getElementById('codingContent');
-const projectsContent = document.getElementById('projectsContent');
+var aboutContent = document.getElementById('aboutContent');
+var codingContent = document.getElementById('codingContent');
+var projectsContent = document.getElementById('projectsContent');
 const featuredProjects = document.getElementById('featuredProjectLayout');
-const contactContent = document.getElementById('contactContent');
-const codingTitle = document.getElementById('codingTitleWrapper');
-const titleWrapper = document.querySelectorAll('.titleWrapper')[0];
+var contactContent = document.getElementById('contactContent');
+var codingTitle = document.getElementById('codingTitleWrapper');
+var titleWrapper = document.querySelectorAll('.titleWrapper')[0];
 const exitButton = document.querySelectorAll(".exit-button-wrapper");
 const contentNavButtons = document.querySelectorAll('.contentNavButtons');
 const formSubmitButton = document.getElementById('submitButton');
-const form = document.querySelector('form');
+var form = document.querySelector('form');
 
 
 //Hides welcome hero screen when Enter button is clicked
-enterButton.addEventListener("click", function() {
+enterButton.addEventListener("click", () => {
 	footer.scrollIntoView({behavior: "smooth"});
         const screen = window.screen.width;
         if (screen < 768) {
@@ -60,41 +65,41 @@ sections.addEventListener("click", (e) => {
 
 //Event Listener for exit buttons on overlay sections
 for (var i=0; i < exitButton.length; i++) {
-  const parent = exitButton[i].parentNode;
-  exitButton[i].addEventListener("click", (e) => {
-    parent.className = "hidden";
-	  if (parent.id === "projectsContent") {
+     const parent = exitButton[i].parentNode;
+     exitButton[i].addEventListener("click", (e) => {
+       parent.className = "hidden";
+	   if (parent.id === "projectsContent") {
 		  projectsContent.style.display = "none";
-	  }
-  })
+	   }
+     })
 };
 
 
 //Event listener for content navigation buttons
 for (var i=0; i < contentNavButtons.length; i++) {
-  contentNavButtons[i].addEventListener("click", (e) => {
-    const button = e.target.id;
-    const screen = window.screen.width;
-    if(button === "codingNavButton") {
-        console.log("button clicked");
-    	aboutContent.className = "hidden";
-	    codingContent.className = "showContent";
-    } else if(button === "projectsNavButton") {
-      if (screen < 768) {
-        codingContent.className = "hidden";
-        projectsContent.className = "showContent";
-        projectsContent.style.display = "flex";
-        projectsContent.style.flexDirection = "column";
-      } else {
-        codingContent.className = "hidden";
-        projectsContent.className = "showContent";
-        projectsContent.style.display = "flex";
-        projectsContent.style.flexDirection = "column";
-        featuredProjects.style.display = "flex";
-        featuredProjects.style.flexDirection = "row";
-      }
-    } 
-  })
+     contentNavButtons[i].addEventListener("click", (e) => {
+       const button = e.target.id;
+       const screen = window.screen.width;
+       if(button === "codingNavButton") {
+         console.log("button clicked");
+    	 aboutContent.className = "hidden";
+	     codingContent.className = "showContent";
+       } else if(button === "projectsNavButton") {
+       if (screen < 768) {
+         codingContent.className = "hidden";
+         projectsContent.className = "showContent";
+         projectsContent.style.display = "flex";
+         projectsContent.style.flexDirection = "column";
+       } else {
+         codingContent.className = "hidden";
+         projectsContent.className = "showContent";
+         projectsContent.style.display = "flex";
+         projectsContent.style.flexDirection = "column";
+         featuredProjects.style.display = "flex";
+         featuredProjects.style.flexDirection = "row";
+       }
+      } 
+    })
 };
 
 
