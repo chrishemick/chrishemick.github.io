@@ -90,15 +90,16 @@ Welcome Styling
     width: 128px;
     height: 128px;
     margin-top: 3vh;
+	margin-bottom: 5vh;
 }
 
 
 #intro p {
     font-family: 'Permanent Marker', cursive;
-    font-size: 5vh;
+    font-size: 4.5vh;
     transform: rotate(-10deg);
-    padding: 0.75em 1em;
-    //margin-top: .25vh;	
+    padding: 0.75em;
+    margin-bottom: 8vh;	
 }
 
 
@@ -291,7 +292,7 @@ Section Styling
 */
 
 #aboutTitleWrapper {	
-    background: url("imgs/ch2.jpg") no-repeat right;	
+    background: url("imgs/ch3.jpg") no-repeat right;	
     background-size: cover;
 }
 
@@ -408,13 +409,13 @@ Section Styling
 
 
 #portfolioSite {	
-    background: url("imgs/building_site.png") no-repeat top;	
+    background: url("imgs/building_site2.png") no-repeat top;	
     background-size: cover;
 }
 
 
 #fbCalc {	
-    background: url("imgs/desk.png") no-repeat center;	
+    background: url("imgs/desk2.jpg") no-repeat center;	
     background-size: cover;
 }
 
@@ -670,7 +671,7 @@ Media Queries
 
 
   #aboutTitleWrapper {	
-    background: url("imgs/ch2.jpg") no-repeat left;
+    background: url("imgs/ch3.jpg") no-repeat left;
     background-size: cover;
     border-right: 1px solid greenyellow;
   }
