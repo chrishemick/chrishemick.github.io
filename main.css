@@ -90,7 +90,7 @@ Welcome Styling
     width: 128px;
     height: 128px;
     margin-top: 3vh;
-	margin-bottom: 5vh;
+	margin-bottom: 3vh;
 }
 
 
@@ -98,8 +98,8 @@ Welcome Styling
     font-family: 'Permanent Marker', cursive;
     font-size: 4.5vh;
     transform: rotate(-10deg);
-    padding: 0.75em;
-    margin-bottom: 8vh;	
+    padding: 0.75em 1em;
+    margin-bottom: 6vh;	
 }
 
 
