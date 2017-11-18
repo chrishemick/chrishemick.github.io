@@ -32,7 +32,7 @@ General Styling
   min-width: 320px;
   min-height: 568px;
   -ms-grid-columns: 1fr;
-  -ms-grid-rows: 100vh 90vh auto;
+  -ms-grid-rows: 90vh 80vh auto;
   -ms-grid-areas:
       "intro"
       "sections"
@@ -96,7 +96,7 @@ Welcome Styling
 
 #intro p {
     font-family: 'Permanent Marker', cursive;
-    font-size: 4.5vh;
+    font-size: 4.75vh;
     transform: rotate(-10deg);
     padding: 0.75em 1em;
     margin-bottom: 6vh;	
