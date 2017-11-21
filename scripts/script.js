@@ -27,12 +27,12 @@ var form = document.querySelector('form');
 
 //Hides welcome hero screen when Enter button is clicked
 enterButton.addEventListener("click", () => {
-	footer.scrollIntoView({behavior: "smooth"});
+	sections.scrollIntoView({behavior: "smooth"});
         const screen = window.screen.width;
         if (screen < 768) {
           setTimeout(() => {
             mainWrapper.style.gridTemplateAreas = "'sections' 'footer'";
-	        mainWrapper.style.gridTemplateRows = "90vh auto";
+	        mainWrapper.style.gridTemplateRows = "85vh auto";
 	        introSection.style.display = "none";
 	    }, 1000);
         } else {
