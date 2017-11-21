@@ -317,6 +317,11 @@ Section Styling
 }
 
 
+#projects-section-subhead {
+	width: 100%;
+}
+
+
 #projects p {
     margin-bottom: 1em;
 }
@@ -356,6 +361,11 @@ Section Styling
     border: 1px solid greenyellow;	
     border-radius: 5px;	
     padding: 5px;
+}
+
+
+#treehouseLink {
+	text-decoration: none;
 }
 
 
