@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="fb_calc_project.css" type="text/css" rel="stylesheet">
-    <title>Chris Hemick - Web Developer - FB Audience Calculator Project Overview</title>
+    <title>Chris Hemick - Web Developer - Golf Weather Project Overview</title>
   </head>
 
   <body>
@@ -42,56 +42,57 @@
         <div class="subSection" id="theWhat">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp1&nbsp</span> The What:</h2>
           <p>
-            A tool for advertisers to estimate how many people they can expect to onboard to Facebook and how many impressions they could potentially deliver.
+            A quick and simple web app project to practice utilizing APIs, AJAX and jQuery.  The concept is geared around a user deciding 
+			if they want to play golf based on the weather forecast. If they decide to play they are brought to GolfNow.com, but 
+			if they don't they are shown the latest golf course photos on Flickr.<br><br> 
+
+			Since the primary focus here was on the processing of data, you will see that there was not much emphasis on the front-end design.  
           </p>
         </div>
 
         <div class="subSection" id="theHow">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp2&nbsp</span> The How:</h2>
           <p>
-            The Facebook Audience Calculator was a side project which was initially written in Python as a command 
-			line program.  However, I wanted additional practice with JavaScript so I translated it and built a simple UI.
+            In order to provide the user with weather, and in some cases golf course photos, I had to utilize two different APIs.  For this I 
+			turned to publicly available options in <a href="https://openweathermap.org/">OpenWeatherMap</a> and <a href="https://www.flickr.com/">Flickr</a>.  
+			To handle the AJAX requests I utilized jQuery, as this is a quick and efficient way to process the data.<br><br>
+
+			Once I had the data sources confirmed, I designed a simple user flow that captures some basic info like their name and the zip-code of 
+			where they are looking to play.  The user name portion was an add-on so that I could also get some practice using local storage.  This 
+			way, if the user returns to the app they are presented a custom greeting rather than the general introduction.<br><br> 
+
+			For this app, I also decided to have the content of each section generated dynamically by jQuery, rather than controlling visibility of 
+			pre-built HTML elements. 
           </p>
-
-          <img src="imgs/fb_calc_excel.png" alt="Excel ScreenShot" id="excelScreenshot">
-
-          <p>
-            Above you see the origination of the calculator, a basic Excel-based solution. While it did the job, it was not 
-			very user-friendly and not all that dynamic. My goal was to set out to create something more visually pleasing and
-			easier to follow.
-          </p>
-
         </div>
 
         <div class="subSection" id="result">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp3&nbsp</span> The Result:</h2>
           <p>
-            With one click, the app calculates how many impressions an advertiser could potentially serve to their audience in a 30 
-			day campaign.  The user can then click to see the full details of how the calculation was done, with the option to adjust 
-			variables such as campaign length, frequency capping and others.  If any adjustments are made, the estimated impressions 
-			automatically recalculate based on the new parameters. 
+            The app successfully pulls in the user's local weather, providing them with the current weather conditions (temperature and weather description), 
+			as well as high and low temps for the day.<br><br>
+  				
+			<!--<img src="imgs/liveCalcScreenshot2.png" alt="Weather Results Screenshot">-->
+
+			This could have just been a simple weather app but I wanted to include one of my favorite hobbies.  Having the ability to pull in the golf photos 
+			from Flickr helps bring home this idea, but also let me interact with more than one API.  A lot of additional functionality could be built into 
+			this app, such as asking additional qualifying questions to help the user determine if they can/can't play that day, or providing more ideal golf 
+			days based on an extended forecast.  For now, it has accomplished my main goal of pulling in dynamic data from other sites to power the user 
+			experience in my own app.
           </p>
-          <img src="imgs/liveCalcScreenshot2.png" alt="App Screenshot">
-          <p>
-            The app can be improved by adding additional features/functionality such as preventing the user from entering a match rate 
-			higher than 100%, adding an additional step for forecasting costs, and smoother transitions. 
-          </p>
-          <button type="button"><a href="https://theevolvingch.github.io/FB-Calculator/" target="_blank">See it in Action</a></button> 
-          <button type="button"><a href="https://github.com/TheEvolvingCH/FB-Calculator" target="_blank">View the Source Code</a></button>
+          
+          <button type="button"><a href="https://theevolvingch.github.io/golf_weather/" target="_blank">See it in Action</a></button> 
+          <button type="button"><a href="https://github.com/TheEvolvingCH/golf_weather" target="_blank">View the Source Code</a></button>
         </div>
 		  
 		<div class="subSection" id="challenges">
           <h2 class="section-subheader"><span class="stepNumbers">&nbsp4&nbsp</span> Challenges:</h2>
           <p>
-          	One of the toughest parts of this project for me was control flow on the full details page.  It was important to provide the 
-			user the controls to modify the data, make sure it was captured correctly, and to highlight error messages in the appropriate 
-			areas when needed.  To tackle this, I tried to break down the process into smaller pieces.  First, dynamically populating the 
-			elements in each section, then handling the Edit/Save button features, and then the Reset button.<br><br>
- 
-			This was also my first time using CSS Grid, which is a great tool, but delayed development as I was learning on the fly.<br><br>
- 
-			While there are things I would have done differently in retrospect, I am happy with the path of this project as it helped me push 
-			forward and apply new skills.
+          	From a development perspective I had to scale back part of my initial idea. I wanted to tap into a third API so that the user would automatically be displayed local tee times in the area.  Unfortunately, I was not able to find any free resources that would allow for this, so I reduced this to linking to GolfNow.<br><br>
+
+			Other minor challenges I experienced were trying to not get to caught up in the design of the page, and handling event listeners on elements that were generated dynamically.<br><br>
+
+			Until next time...
           </p>
         </div>
       </article>
@@ -126,3 +127,4 @@
   </body>
 
 </html>
+
