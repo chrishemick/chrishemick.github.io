@@ -3,10 +3,10 @@ General Styling
 *****/
 
 
-* {  
-    margin: 0;  
-    padding: 0;  
-    box-sizing: border-box;  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
 	//scroll-behavior: smooth;
 }
@@ -18,13 +18,13 @@ General Styling
 }
 
 
-@keyframes pulse { 
+@keyframes pulse {
     from { transform: scale(1); }
     to   { transform: scale(1.25); }
 }
 
 
-#mainWrapper { 
+#mainWrapper {
   display: -webkit-grid;
   display: -ms-grid;
   display: grid;
@@ -46,7 +46,7 @@ General Styling
 }
 
 
-p, strong { 
+p, strong {
     font-family: 'Open Sans', sans-serif;
 	color: #FFF;
 }
@@ -68,15 +68,15 @@ Welcome Styling
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column; 
-  -ms-flex-direction: column; 
-  flex-direction: column; 
-  -webkit-align-items: center; 
-  -ms-flex-align: center; 
-  align-items: center;  
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   color: #FFF;
   background: url("imgs/background.jpg") no-repeat center;
@@ -99,7 +99,7 @@ Welcome Styling
     font-size: 4.75vh;
     transform: rotate(-10deg);
     padding: 0.75em 1em;
-    //margin-bottom: 6vh;	
+    //margin-bottom: 6vh;
 }
 
 
@@ -130,9 +130,9 @@ Welcome Styling
 }
 
 
-.punctuation { 
+.punctuation {
     color: greenyellow;
-	font-family: 'Permanent Marker', cursive; 
+	font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -145,7 +145,7 @@ Section Styling
 	height: 25%;
 }
 
-.content p { 
+.content p {
   padding: .5em 1.25em;
   font-size: 0.75em;
 }
@@ -186,7 +186,7 @@ Section Styling
 
 .section-title {
     color: rgba(255, 255, 255, 0.7);
-    text-align: center; 
+    text-align: center;
     font-size: 3em; /*64px / 16 = 4em */
     background-color: rgba(62, 71, 79, .3);
     border-radius: 5px;
@@ -195,8 +195,8 @@ Section Styling
 
 
 .section-subhead {
-   padding: 0 .25em;	
-   margin: 8vh 0 1vh 0;	
+   padding: 0 .25em;
+   margin: 8vh 0 1vh 0;
    background-color: rgba(255, 255, 255, 0.5);
    border-radius: 5px;
    align-self: flex-start;
@@ -217,7 +217,7 @@ Section Styling
   height: 100%;
   width: 100%;
   border: 2px solid greenyellow;
-  top: 0; 
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
@@ -249,8 +249,8 @@ Section Styling
 
 
 .contentNavButtons {
-    display: -webkit-flex;
-    display: -ms-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
 	display: flex;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -258,8 +258,8 @@ Section Styling
 
 
 .mobileNavButton {
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
@@ -287,13 +287,13 @@ Section Styling
 
 
 /*
-#about {   
+#about {
     grid-area: about;
 }
 */
 
-#aboutTitleWrapper {	
-    background: url("imgs/ch3.jpg") no-repeat right;	
+#aboutTitleWrapper {
+    background: url("imgs/ch3.jpg") no-repeat right;
     background-size: cover;
 }
 
@@ -303,16 +303,17 @@ Section Styling
   display: block;
   margin: auto;
   margin-bottom: 1.25em;
+  border-radius: 5px;
 }
 
 
 /*
-#projects {   
+#projects {
     grid-area: projects;
 }
 */
 
-#projectsTitleWrapper {	
+#projectsTitleWrapper {
     background: url("imgs/projects.jpg") no-repeat center;
     background-size: cover;
 }
@@ -358,9 +359,9 @@ Section Styling
 }
 
 
-#coding li {	
-    border: 1px solid greenyellow;	
-    border-radius: 5px;	
+#coding li {
+    border: 1px solid greenyellow;
+    border-radius: 5px;
     padding: 5px;
 }
 
@@ -383,27 +384,27 @@ Section Styling
 }
 
 
-.project a {	
-    text-decoration: none;	
-    font-family: 'Permanent Marker', cursive;	
+.project a {
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
     color: #FFF;
 }
 
 
 .project {
     display: -webkit-flex;
-    display: -ms-flex;	
+    display: -ms-flex;
     display: flex;
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;	
+    -ms-flex-direction: column;
     flex-direction: column;
    -webkit-align-items: center;
-   -ms-flex-align: center;	
+   -ms-flex-align: center;
     align-items: center;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;	
-    justify-content: center;	
-    width: 100%;		
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
     color: #FFF;
     border: 1px solid greenyellow;
     -webkit-flex: 1;
@@ -419,19 +420,19 @@ Section Styling
 }
 
 
-#portfolioSite {	
-    background: url("imgs/building_site2.jpg") no-repeat top;	
+#portfolioSite {
+    background: url("imgs/building_site2.jpg") no-repeat top;
     background-size: cover;
 }
 
 
-#fbCalc {	
-    background: url("imgs/desk2.jpg") no-repeat center;	
+#fbCalc {
+    background: url("imgs/desk2.jpg") no-repeat center;
     background-size: cover;
 }
 
 
-#contact {   
+#contact {
     grid-area: contact;
     background-color: #FFF;
 }
@@ -443,18 +444,18 @@ Section Styling
 }
 
 
-#contact form {	
+#contact form {
     display: -webkit-flex;
-    display: -ms-flexbox;	
+    display: -ms-flexbox;
    	display: flex;
    	-webkit-flex-direction: column;
-   	-ms-flex-direction: column;	
-   	flex-direction: column;	
+   	-ms-flex-direction: column;
+   	flex-direction: column;
    	-webkit-justify-content: flex-start;
    	-ms-flex-pack: start;
    	justify-content: center;
 	-webkit-align-items: center;
-	-ms-flex-align: center;	
+	-ms-flex-align: center;
 	align-items: center;
    	width: 75%;
 	height: 90%;
@@ -470,22 +471,22 @@ Section Styling
 }
 
 
-#contact input, textarea, select {	
-    border: 1px dashed greenyellow;	
-    border-radius: 5px;	
+#contact input, textarea, select {
+    border: 1px dashed greenyellow;
+    border-radius: 5px;
     font-size: 1em;
     width: 95%;
 }
 
 
-#contact button {	
-    border: 1px dashed greenyellow;	
-    border-radius: 5px;	
+#contact button {
+    border: 1px dashed greenyellow;
+    border-radius: 5px;
     width: 40%;
     max-width: 150px;
     -webkit-align-self: center;
-    -ms-flex-align: center;	
-    align-self: center;	
+    -ms-flex-align: center;
+    align-self: center;
     background-color: rgb(62, 71, 79);
 	padding: .25em;
     margin: 2vh 0;
@@ -497,7 +498,7 @@ Section Styling
 #submitButtonText {
     font-size: 3vh;
 	text-align: center;
-    color: #FFF;	
+    color: #FFF;
 }
 
 
@@ -509,27 +510,27 @@ Section Styling
 }
 
 
-footer {  
+footer {
     -webkit-grid-area: footer;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: footer;
     display: -webkit-flex;
-    display: -ms-flexbox;	
+    display: -ms-flexbox;
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-align-items: center;
     -ms-flex-align: center;
-    align-items: center;	
+    align-items: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0.5em 0;   
+    padding: 0.5em 0;
     font-family: 'Permanent Marker', cursive;
-    color: #FFF;  
-    font-size: 2vh;  
+    color: #FFF;
+    font-size: 2vh;
     text-align: center;
     border-top: 1px solid greenyellow;
     background-color: rgb(62, 71, 79);
@@ -565,7 +566,7 @@ footer {
 }
 
 
-footer p {	
+footer p {
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -578,33 +579,33 @@ Media Queries
 *************/
 
 @media (min-width: 768px) {
-	
-  	
-  #mainWrapper { 
+
+
+  #mainWrapper {
       -webkit-grid-template-columns: repeat(2, 1fr);
       -webkit-grid-template-rows: 100vh 90vh auto;
-      -webkit-grid-template-areas:   
-        "intro intro"	
-        "sections sections"  
+      -webkit-grid-template-areas:
+        "intro intro"
+        "sections sections"
         "footer footer";
       -ms-grid-columns: (1fr)[2];;
-      -ms-grid-rows: 100vh 90vh auto;		
+      -ms-grid-rows: 100vh 90vh auto;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 100vh 90vh auto;
-      grid-template-areas:   
-        "intro intro"	
-        "sections sections"  
-        "footer footer";	
+      grid-template-areas:
+        "intro intro"
+        "sections sections"
+        "footer footer";
   }
-	
+
 
   #intro {
     -ms-grid-column-span: 2;
     -webkit-justify-content: center;
-    -ms-flex-pack: center;	
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    z-index: 1; 
+    z-index: 1;
   }
 
 
@@ -619,7 +620,7 @@ Media Queries
     overflow: hidden;
   }
 
-	
+
   .content {
     height: 50%;
     width: 50%;
@@ -631,31 +632,31 @@ Media Queries
   }
 
 
-  a, #contact a, #projects a, button {		
-    transition: 0.3s ease-in;	
-  }
-	
-
-  a:hover, #contact a:hover, #projects a:hover, button:hover {		
-    color: greenyellow;	
-  }
-	
-
-  #logo {	
-    width: 30vh;		
-    height: 30vh;				
-    transition: 0.5s ease-in;	
-  }
-	
-
-  #logo:hover {	
-    transform: scale(1.5) rotate(35deg);	
+  a, #contact a, #projects a, button {
+    transition: 0.3s ease-in;
   }
 
 
-  .section-wrapper {		
+  a:hover, #contact a:hover, #projects a:hover, button:hover {
+    color: greenyellow;
+  }
+
+
+  #logo {
+    width: 30vh;
+    height: 30vh;
+    transition: 0.5s ease-in;
+  }
+
+
+  #logo:hover {
+    transform: scale(1.5) rotate(35deg);
+  }
+
+
+  .section-wrapper {
     height: 100%;
-    background-color: #FFF;	
+    background-color: #FFF;
   }
 
 
@@ -673,7 +674,7 @@ Media Queries
     z-index: 100;
 	transform-origin: 50.01%; /*fixes choppy transitions in Microsoft*/
 }
-	
+
 
   .section-title {
 	font-size: 5vmax;
@@ -681,14 +682,14 @@ Media Queries
   }
 
 
-  #aboutTitleWrapper {	
+  #aboutTitleWrapper {
     background: url("imgs/ch3.jpg") no-repeat left;
     background-size: cover;
     border-right: 1px solid greenyellow;
   }
 
 
-  #projectsTitleWrapper {	
+  #projectsTitleWrapper {
     border-right: 1px solid greenyellow;
   }
 
@@ -704,10 +705,10 @@ Media Queries
 
 
   .section-subhead {
-    margin: 10vh 0 1vh 0;	
+    margin: 10vh 0 1vh 0;
   }
 
-	
+
   #aboutPhoto {
     display: inline;
     float: right;
@@ -726,46 +727,46 @@ Media Queries
 
   #contact ul {
     -webkit-flex-direction: row;
-    -ms-flex-direction: row;		
-    flex-direction: row;		
-    padding: 0;	
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0;
   }
-	
-	
-   #contact li {	
+
+
+   #contact li {
     -webkit-flex-direction: column;
-    -ms-flex-direction: column;	
-    flex-direction: column;		
-    text-align: center;	
-  }
-	
-
-  #contact a {       
-    margin-left: unset;		
-    margin-top: 15px;	
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
   }
 
-	
-  #submitButton:hover {	
+
+  #contact a {
+    margin-left: unset;
+    margin-top: 15px;
+  }
+
+
+  #submitButton:hover {
     background-color: greenyellow;
 	cursor: pointer;
 	color: rgb(62, 71, 79);
   }
-	
 
-  #submitButton:hover #submitButtonText {	
+
+  #submitButton:hover #submitButtonText {
 	color: rgb(62, 71, 79);
   }
-	
-	
+
+
   footer {
     -ms-grid-column-span: 2;
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
   }
-	
-	
+
+
   footer p {
     margin-right: auto;
     margin-left: 1em;
@@ -776,7 +777,7 @@ Media Queries
     width: 25%;
   }
 
-  
+
   .findMeLogos {
     width: 50px;
     height: 50px;
@@ -801,27 +802,27 @@ Media Queries
 
 @media (min-width: 1028px) {
 
-  #mainWrapper { 
+  #mainWrapper {
     -webkit-grid-template-rows: 50vh 43vh minmax(55px, 7vh);
-    -ms-grid-rows: 50vh 43vh minmax(55px, 7vh);	
-    grid-template-rows: 50vh 43vh minmax(55px, 7vh);	 
-    overflow: hidden;  	
+    -ms-grid-rows: 50vh 43vh minmax(55px, 7vh);
+    grid-template-rows: 50vh 43vh minmax(55px, 7vh);
+    overflow: hidden;
   }
 
-	
+
   #intro {
     -ms-grid-row: 1;
   }
-	
-	
+
+
   #logo {
 	height: 15vh;
 	width: 15vh;
   }
-	
-	
+
+
   #intro p {
-	margin-top: -5vh;	
+	margin-top: -5vh;
   }
 
 
@@ -848,7 +849,7 @@ Media Queries
   }
 
 
-  .section-title {		
+  .section-title {
     font-size: 5vmax;
   }
 
@@ -865,12 +866,12 @@ Media Queries
     width: 74%;
   }
 
-	
+
   #footer {
     -ms-grid-row: 3;
-  } 
-	
-	
+  }
+
+
   #platformLogos {
     width: 20%;
   }
