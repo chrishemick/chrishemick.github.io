@@ -87,19 +87,19 @@ Welcome Styling
 
 
 #logo {
-    width: 128px;
-    height: 128px;
-    margin-top: 3vh;
+  width: 128px;
+  height: 128px;
+  margin-top: 3vh;
 	margin-bottom: 3vh;
 }
 
 
 #intro p {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 4.75vh;
-    transform: rotate(-10deg);
-    padding: 0.75em 1em;
-    //margin-bottom: 6vh;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 4.75vh;
+  transform: rotate(-10deg);
+  padding: 0.75em 1em;
+  //margin-bottom: 6vh;
 }
 
 
@@ -121,7 +121,7 @@ Welcome Styling
 .material-icons {
 	font-size: 3em;
 	color: greenyellow;
-    transition: 0.25s ease-in;
+  transition: 0.25s ease-in;
 }
 
 
@@ -131,7 +131,7 @@ Welcome Styling
 
 
 .punctuation {
-    color: greenyellow;
+  color: greenyellow;
 	font-family: 'Permanent Marker', cursive;
 }
 
@@ -226,20 +226,20 @@ Section Styling
 
 
 .exit-button-wrapper {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: fixed;
-    height: auto;
-    background-color: rgba(62, 71, 79, 0.8);
-    width: 100%;
-    z-index: 2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  height: auto;
+  background-color: rgba(62, 71, 79, 0.8);
+  width: 100%;
+  z-index: 2;
 }
 
 
@@ -301,9 +301,8 @@ Section Styling
 #aboutPhoto {
   width: 90%;
   display: block;
-  margin: auto;
-  margin-bottom: 1.25em;
-  border-radius: 5px;
+  margin: 1em auto;
+  border-radius: 10px;
 }
 
 
