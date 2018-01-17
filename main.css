@@ -293,8 +293,8 @@ Section Styling
 */
 
 #aboutTitleWrapper {
-    background: url("imgs/ch3.jpg") no-repeat right;
-    background-size: cover;
+  background: url("imgs/ch4.jpg") no-repeat top;
+  background-size: cover;
 }
 
 
@@ -671,18 +671,18 @@ Media Queries
     border-radius: 5px;
     cursor: pointer;
     z-index: 100;
-	transform-origin: 50.01%; /*fixes choppy transitions in Microsoft*/
-}
+	   transform-origin: 50.01%; /*fixes choppy transitions in Microsoft*/
+   }
 
 
   .section-title {
-	font-size: 5vmax;
+	  font-size: 5vmax;
     transition: 0.25s ease-in;
   }
 
 
   #aboutTitleWrapper {
-    background: url("imgs/ch3.jpg") no-repeat left;
+    background: url("imgs/ch4.jpg") no-repeat left;
     background-size: cover;
     border-right: 1px solid greenyellow;
   }
