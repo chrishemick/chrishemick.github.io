@@ -1,128 +1,159 @@
 <!doctype HTML>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="fb_calc_project.css" type="text/css" rel="stylesheet">
-    <title>Chris Hemick - Web Developer - FB Audience Calculator Project Overview</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Chris Hemick is a marketing & web development professional based in Westchester County, NY.">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <title>Chris Hemick | Web Developer | FB Calculator</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109540862-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-109540862-1');
+    </script>
   </head>
 
   <body>
-    <div id="mainWrapper">
-      <header>
-        <a href="./index.html"><img src="imgs/ch_logo.png" alt="logo" id="logo"></a>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li class="dropdown">
-              <a class="dropbtn active">Projects</a>
-                <div class="dropdown-content">
-                  <a href="./portfolio_site_project.html">Portfolio Site</a>
-                  <a href="./fb_calculator_project.html">Audience Calculator</a>
-				  <a href="./golf_weather_project.html">Golf Weather</a>
-                </div>
-            </li>
-            <li><a href="./index.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+	  <header>
+  		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  			<a class="navbar-brand d-flex align-items-center" href="#">
+  				<img src="imgs/ch_logo.png" width="50" height="50" class="d-inline-block align-top mr-1" alt="logo">
+  				Chris Hemick
+  			</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  				<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNav">
+    			<div class="navbar-nav ml-auto">
+    				<div class="nav-item dropdown">
+    					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      						More Projects
+    					</a>
+    					<div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+      						<a class="dropdown-item text-secondary" href="./portfolio_site_project.html">Portfolio Site</a>
+      						<a class="dropdown-item text-secondary" href="./golf_weather_project.html">Golf Weather</a>
+    					</div>
+  			    </div>
+            <a class="nav-item nav-link" href="./index.html">Home</a>
+          </div>
+  			</div>
+  		</nav>
+  	</header>
 
-    <section id="projectHero">
-      <h1>Facebook Audience Calculator</h1>
-      <p>
-	 	The first web app created by me meant to bring together my learning with my current role.
-      </p>
-    </section>
+  	<section class="jumbotron jumbotron-fluid d-flex flex-column justify-content-center align-items-center text-light mt-5">
+      <div class="container text-center" id="jumbo-text">
+      	<h1 class="display-4">Facebook Audience Calculator</h1>
+    	  <p class="lead">The first web app created by me to bring together coding with my current role.</p>
+      </div>
+  	</section>
 
-    <section id="projectOverview">
-      <article>
-        <p id="createdInfo">Created: <time datetime="2017-11-8 19:00">November 8th, 2017</time></p>
-        <div class="subSection" id="theWhat">
-          <h2 class="section-subheader"><span class="stepNumbers">&nbsp1&nbsp</span> The What:</h2>
-          <p>
+
+      <section class="container" id="projectOverview">
+        <article>
+          <p id="createdInfo">Created: <time datetime="2017-11-8 19:00">November 8th, 2017</time></p>
+          <div class="subSection" id="theWhat">
+            <h2 class="section-subheader"><span class="stepNumbers">&nbsp1&nbsp;</span> The What:</h2>
+            <p>
             A tool for advertisers to estimate how many people they can expect to onboard to Facebook and how many impressions they could potentially deliver.
-          </p>
-        </div>
+            </p>
+          </div>
 
-        <div class="subSection" id="theHow">
-          <h2 class="section-subheader"><span class="stepNumbers">&nbsp2&nbsp</span> The How:</h2>
-          <p>
+          <div class="subSection" id="theHow">
+            <h2 class="section-subheader"><span class="stepNumbers">&nbsp2&nbsp;</span> The How:</h2>
+            <p>
             The Facebook Audience Calculator was a side project which was initially written in Python as a command
-			line program.  However, I wanted additional practice with JavaScript so I translated it and built a simple UI.
-          </p>
+  	        line program.  However, I wanted additional practice with JavaScript so I translated it and built a simple UI.
+            </p>
 
-          <img src="imgs/fb_calc_excel.png" alt="Excel ScreenShot" id="excelScreenshot">
+            <img class="d-block mx-auto" src="imgs/fb_calc_excel.png" alt="Excel ScreenShot" id="excelScreenshot">
 
-          <p>
+            <p>
             Above you see the origination of the calculator, a basic Excel-based solution. While it did the job, it was not
-			very user-friendly and not all that dynamic. My goal was to set out to create something more visually pleasing and
-			easier to follow.
-          </p>
+            very user-friendly and not all that dynamic. My goal was to set out to create something more visually pleasing and
+            easier to follow.
+            </p>
+          </div>
 
-        </div>
-
-        <div class="subSection" id="result">
-          <h2 class="section-subheader"><span class="stepNumbers">&nbsp3&nbsp</span> The Result:</h2>
-          <p>
+          <div class="subSection" id="result">
+            <h2 class="section-subheader"><span class="stepNumbers">&nbsp3&nbsp;</span> The Result:</h2>
+            <p>
             With one click, the app calculates how many impressions an advertiser could potentially serve to their audience in a 30
-			day campaign.  The user can then click to see the full details of how the calculation was done, with the option to adjust
-			variables such as campaign length, frequency capping and others.  If any adjustments are made, the estimated impressions
-			automatically recalculate based on the new parameters.
-          </p>
-          <img src="imgs/liveCalcScreenshot2.png" alt="App Screenshot">
-          <p>
+            day campaign.  The user can then click to see the full details of how the calculation was done, with the option to adjust
+            variables such as campaign length, frequency capping and others.  If any adjustments are made, the estimated impressions
+            automatically recalculate based on the new parameters.
+            </p>
+
+            <img class="d-block mx-auto img-fluid" id="liveCalcScreenshot" src="imgs/liveCalcScreenshot2.png" alt="App Screenshot">
+
+            <p>
             The app can be improved by adding additional features/functionality such as preventing the user from entering a match rate
-			higher than 100%, adding an additional step for forecasting costs, and smoother transitions.
-          </p>
-          <button type="button"><a href="https://chrishemick.github.io/FB-Calculator/" target="_blank">See it in Action</a></button>
-          <button type="button"><a href="https://github.com/chrishemick/FB-Calculator" target="_blank">View the Source Code</a></button>
+            higher than 100%, adding an additional step for forecasting costs, and smoother transitions.
+            </p>
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
+              <a class="m-1" href="https://chrishemick.github.io/FB-Calculator/" target="_blank">
+  	            <input type="button" class="btn btn-outline-primary btn-lg mx-auto" value="See it in Action">
+              </a>
+              <a class="m-1" href="https://github.com/chrishemick/FB-Calculator" target="_blank">
+  	            <input type="button" class="btn btn-outline-primary btn-lg mx-auto" value="View the Source Code">
+              </a>
+            </div>
+          </div>
+
+  	      <div class="subSection" id="challenges">
+            <h2 class="section-subheader"><span class="stepNumbers">&nbsp4&nbsp;</span> Challenges:</h2>
+            <p>
+            One of the toughest parts of this project for me was control flow on the full details page.  It was important to provide the
+        	  user the controls to modify the data, make sure it was captured correctly, and to highlight error messages in the appropriate
+        	  areas when needed.  To tackle this, I tried to break down the process into smaller pieces.  First, dynamically populating the
+        	  elements in each section, then handling the Edit/Save button features, and then the Reset button.<br><br>
+
+        	  This was also my first time using CSS Grid, which is a great tool, but delayed development as I was learning on the fly.<br><br>
+
+        	  While there are things I would have done differently in retrospect, I am happy with the path of this project as it helped me push
+        	  forward and apply new skills.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="container my-3" id="nextSteps">
+        <h1 class="bg-dark text-center">What Next?</h1>
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-around">
+          <a class="steps d-flex align-items-center justify-content-center my-1" id="portfolioSiteLink" href="./portfolio_site_project.html">
+            <h2 class="text-center">See the Story Behind My Portfolio Site</h2>
+          </a>
+
+          <a class="steps d-flex align-items-center justify-content-center" id="returnHomeLink" href="./index.html">
+            <h2 class="text-center">Return Home</h2>
+          </a>
         </div>
+      </section>
 
-		<div class="subSection" id="challenges">
-          <h2 class="section-subheader"><span class="stepNumbers">&nbsp4&nbsp</span> Challenges:</h2>
-          <p>
-          	One of the toughest parts of this project for me was control flow on the full details page.  It was important to provide the
-			user the controls to modify the data, make sure it was captured correctly, and to highlight error messages in the appropriate
-			areas when needed.  To tackle this, I tried to break down the process into smaller pieces.  First, dynamically populating the
-			elements in each section, then handling the Edit/Save button features, and then the Reset button.<br><br>
+      <footer class="container-fluid d-flex align-items-center justify-content-between text-light bg-dark">
+  	    <p class="footer-copyright mt-3">&copy; Chris Hemick 2018</p>
+  	      <div class="d-flex justify-content-end" id="platformLogos">
+  		      <a href="https://github.com/chrishemick" target="_blank"><img src="imgs/GitHub-Mark-64px.png" alt="github_logo" class="findMeLogos"></a>
+  		      <a href="http://www.teamtreehouse.com/chrishemick" target="_blank"><img src="imgs/Treehouse_Logo_Gray-Medium.png" alt="treehouse_logo" class="findMeLogos"></a>
+  		      <a href="https://www.linkedin.com/in/chrishemick/" target="_blank"><img src="imgs/In-Black-54px-R.png" alt="li_logo" id="liLogo" class="findMeLogos"></a>
+  	      </div>
+      </footer>
 
-			This was also my first time using CSS Grid, which is a great tool, but delayed development as I was learning on the fly.<br><br>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-			While there are things I would have done differently in retrospect, I am happy with the path of this project as it helped me push
-			forward and apply new skills.
-          </p>
-        </div>
-      </article>
-
-    </section>
-
-    <section id="nextSteps">
-      <h1>What Next?</h1>
-      <div class="steps" id="portfolioSiteLink">
-        <a href="./portfolio_site_project.html">
-          <h2 class="section-subheader">See the Story Behind My Portfolio Site</h2>
-        </a>
-      </div>
-
-      <div class="steps" id="returnHomeLink">
-        <a href="./index.html">
-          <h2 class="section-subheader">Return Home</h2>
-        </a>
-      </div>
-    </section>
-
-    <footer>
-		<div id="platformLogos">
-			<a href="https://github.com/chrishemick" target="_blank" class="findMeLogos"><img src="imgs/GitHub-Mark/PNG/GitHub-Mark-64px.png" alt="github_logo"></a>
-			<a href="http://www.teamtreehouse.com/chrishemick" target="_blank" class="findMeLogos"><img src="imgs/Treehouse-Logos/Images/Treehouse Logo Gray/Treehouse Logo Gray - Medium.png" alt="treehouse_logo"></a>
-    		<a href="https://www.linkedin.com/in/chrishemick/" target="_blank" class="findMeLogos"><img src="imgs/LinkedIn [in] for Screen/Black/In-Black-54px-R.png" alt="li_logo" id="liLogo"></a>
-		</div>
-      <p>&copy Chris Hemick 2017</p>
-    </footer>
-    </div>
-	<script src="scripts/project_summary_script.js"></script>
   </body>
 
 </html>
