@@ -53,7 +53,7 @@ $('#thBadgeButton').click(function() {
 	$(this).attr("disabled", true).val("Getting badges...");
 	const thURL = "https://teamtreehouse.com/chrishemick.json";
 	function displayBadges(data) {
-		const latestBadges = data.badges.slice(-6, -1);
+		const latestBadges = data.badges.slice(-5);
 		console.log(latestBadges);
 		let badgeHTML = '<div class="card-deck mx-auto">';
 		$.each(latestBadges, function(i, badge) {
@@ -83,7 +83,7 @@ let form = document.getElementById('contact-form');
 form.addEventListener('submit', function(e) {
 	if (form.checkValidity() === false) {
 	  e.preventDefault();
-          e.stopPropagation();
-        }
-        form.classList.add('was-validated');
+    e.stopPropagation();
+  }
+  form.classList.add('was-validated');
 });
