@@ -54,6 +54,10 @@ section {
   border: none;
 }
 
+.card-title {
+  color: yellowgreen;
+}
+
 .card-footer {
   background-color: #FFF;
 }
