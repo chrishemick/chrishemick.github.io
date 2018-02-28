@@ -63,9 +63,18 @@ section {
 }
 
 .project {
-  height: 250px;
+  height: auto;
   color: #FFF;
-  margin: 1em;
+  margin: 0.25em;
+  transition: 0.3s ease-in;
+}
+
+.project img {
+  transition: 0.3s ease-in;
+}
+
+.project:hover img {
+  transform: scale(1.1);
 }
 
 #projects {
@@ -78,27 +87,29 @@ section {
 }
 
 #project1 {
-  background: url("imgs/portfolio_project.jpg") no-repeat center;
-  background-size: cover;
+  margin-bottom: -3em;
 }
-
+/*
 #project2 {
   background: url("imgs/building_site2.jpg") no-repeat center;
   background-size: cover;
 }
-
+*/
 .projectTitle {
+  position: absolute;
+  background-color: rgba(255,255,255,0.5);
   color: black;
-  width: 75%;
-  background-color: rgba(255,255,255,0.4);
+  width: 50%;
   border-radius: 5px;
+  border: 1px solid yellowgreen;
   transition: 0.3s ease-in;
+  z-index: 1;
 }
 
-.projectTitle:hover {
+.project:hover .projectTitle {
   background-color: rgba(255,255,255,0.8);
-  background-position: right;
 }
+
 
 #aboutPhoto {
   height: 75%;
