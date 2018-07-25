@@ -22,6 +22,10 @@ section {
   font-family: 'Alfa Slab One', cursive;
 }
 
+#learnMoreBtn {
+  border-color: yellowgreen;
+}
+
 #titleBtn {
   height: 100px;
 }
