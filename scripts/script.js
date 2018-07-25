@@ -3,11 +3,9 @@ console.log("I'm linked!");
 
 $(document).ready(function() {
 	$("#jumbo-text").fadeIn(1500);
-	/*
 	$( ".nav-link" ).first().delay(800).fadeIn( "slow", function showNext() {
 		$(this).next(".nav-link").fadeIn("slow", showNext);
 	});
-	*/
 	$('#learnMoreBtn').delay(1500).slideDown("slow");
 
 	$("a").on('click', function(event) {
