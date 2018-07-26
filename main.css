@@ -11,7 +11,8 @@ section {
 }
 
 .jumbotron {
-  background: url("imgs/background.jpg") no-repeat center;
+  background: url("imgs/projects.jpg") no-repeat center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
   margin-bottom: -70px;
@@ -32,6 +33,7 @@ section {
 
 .customTitle {
   font-family: 'Monoton', cursive;
+  color: yellowgreen;
 }
 
 .nav-link, .nav {
