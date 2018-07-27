@@ -15,7 +15,7 @@ section {
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
-  margin-bottom: -70px;
+  /*margin-bottom: -70px;*/
 }
 
 #jumbo-text, #learnMoreBtn {
@@ -44,14 +44,42 @@ section {
   opacity: 0;
 }
 
-#whatIDo, #tools {
-  margin-bottom: -70px;
+.sectionTitle {
+  color: #FFF;
 }
 
-.whatIDoIcons {
+#whoIam, #tools {
+  min-height: 90vh;
+  /*margin-bottom: -70px;*/
+}
+
+#whoIam {
+  color: #FFF;
+  background-image: url("imgs/about2.png"), linear-gradient(rgba(154,205,50,0.8),rgba(154,205,50,0.8));
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#approach {
+  background-image: url("imgs/contact_background.png"), linear-gradient(rgba(199,69,237,0.8),rgba(199,69,237,0.8));
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 90vh;
+}
+
+#approach .card {
+  color: #FFF;
+  background-color: rgba(105,26,184,0.4);
+}
+
+.approachIcons {
   font-size: 10vh;
+  /*
   border: 2px solid yellowgreen;
   border-radius: 50%;
+  */
   padding: 5px;
   margin-bottom: .25em;
 }
@@ -84,7 +112,7 @@ section {
 }
 
 #projects {
-  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  /*clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);*/
   margin-bottom: -70px;
 }
 
@@ -95,6 +123,7 @@ section {
 #project1 {
   margin-bottom: -3em;
 }
+
 /*
 #project2 {
   background: url("imgs/building_site2.jpg") no-repeat center;
@@ -126,19 +155,16 @@ section {
   color: black;
 }
 
-#aboutPhoto {
-  height: 75%;
-  width: 75%;
-}
-
 .toolLogo {
   width: 25%;
   height: auto;
 }
 
+/*
 #learning {
   clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }
+*/
 
 #thBadgeButton {
   display: block;
@@ -151,6 +177,7 @@ section {
 
 #more {
   padding-bottom: 0;
+  /*background-color: rgb(26,184,78);*/
 }
 
 footer {
