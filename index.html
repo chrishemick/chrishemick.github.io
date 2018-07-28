@@ -56,13 +56,12 @@
     		</div>
     	</section>
 
-    	<section class="container-fluid fadeInBlock" id="whoIam">
+    	<section class="container-fluid fadeInBlock d-flex flex-column justify-content-center align-items-center" id="whoIam">
         <div class="row">
           <div class="col-md">
           </div>
           <div class="col-md">
       		<h1 class="text-center mt-3 sectionTitle">WHO I AM</h1>
-          <img src="imgs/line.png" class="d-block mb-3 mx-auto img-fluid">
             <div class="container">
               <p class="text-center">
                 As the Senior Product Manager at a B2B data & analytics company, I partner across
@@ -70,7 +69,7 @@
                 With thousands of buyers, across hundreds of brands and agencies, I strive to create products
                 and services that meet their evolving needs.
               </p>
-              <p class="text-center">
+              <p class="text-center hidden" id="moreBio">
                 A graduate of the University at Albany, SUNY School of Business, I now reside in Westchester County, NY.
                 Outside of work you can find me spending time with my wife and daughters, as well as our Australian Shepherd
                 Bruiser (despite his name he is quite a softie).<br><br>
@@ -80,6 +79,7 @@
                 and reading about a wide variety of topics.  During commutes I'm typically listening to podcasts that educate, ignite
                 curiosity, challenge traditional thinking and encourage people to push themselves.
               </p>
+              <button type="button" class="btn btn-outline-secondary readMoreButton" id="moreBioButton">Read More</button>
             </div>
           </div>
         </div>
@@ -88,49 +88,52 @@
       <section class="container-fluid fadeInBlock" id="approach">
         <h1 class="text-center mt-3 sectionTitle">APPROACH</h1>
         <img src="imgs/line.png" class="d-block mb-3 mx-auto img-fluid">
-
-  			<div class="card-deck">
-  				<div class="card">
-  					<div class="card-body text-center">
-              <i class="material-icons approachIcons">blur_on</i>
-  						<h4 class="card-title">Recognize</h4>
-  						<p class="card-text">
-                Identify the issue or goal at hand. Put myself in the shoes of the stakeholder to truly understand the need. Assess inputs
-                from across the business to prioritize against other initiatives.
-              </p>
-  					</div>
-  				</div>
-  				<div class="card">
-  					<div class="card-body text-center">
-              <i class="material-icons approachIcons">view_quilt</i>
-  						<h4 class="card-title">Design</h4>
-  						<p class="card-text">Research the competitive landscape. Establish a plan. Define the requirements. Get stakeholder buy-in.</p>
-  					</div>
-  				</div>
-  				<div class="card">
-  					<div class="card-body text-center">
-              <i class="material-icons approachIcons">devices_other</i>
-  						<h4 class="card-title">Build</h4>
-  						<p class="card-text">Put the plan into action. Ensure maximum collaboration. Enable teams via communication.</p>
-  					</div>
-  				</div>
-          <div class="card">
-            <div class="card-body text-center">
-              <i class="material-icons approachIcons">track_changes</i>
-              <h4 class="card-title">Refine</h4>
-              <p class="card-text">Ingest feedback from the market. Speak with the sales team. Analyze data. Translate to product enhancements.</p>
-            </div>
+        <div class="container">
+    			<div class="card-deck">
+    				<div class="card">
+    					<div class="card-body text-center">
+                <i class="material-icons approachIcons">blur_on</i>
+    						<h4 class="card-title">Recognize</h4>
+    						<p class="card-text">
+                  Identify the issue or goal at hand. Put myself in the shoes of the stakeholder to truly understand the need. Assess inputs
+                  from across the business to prioritize against other initiatives.
+                </p>
+    					</div>
+    				</div>
+    				<div class="card">
+    					<div class="card-body text-center">
+                <i class="material-icons approachIcons">view_quilt</i>
+    						<h4 class="card-title">Design</h4>
+    						<p class="card-text">Research the competitive landscape. Establish a plan. Define the requirements. Get stakeholder buy-in.</p>
+    					</div>
+    				</div>
           </div>
-  			</div>
+          <div class="card-deck mt-3">
+    				<div class="card">
+    					<div class="card-body text-center">
+                <i class="material-icons approachIcons">devices_other</i>
+    						<h4 class="card-title">Build</h4>
+    						<p class="card-text">Put the plan into action. Ensure maximum collaboration. Enable teams via communication.</p>
+    					</div>
+    				</div>
+            <div class="card">
+              <div class="card-body text-center">
+                <i class="material-icons approachIcons">track_changes</i>
+                <h4 class="card-title">Refine</h4>
+                <p class="card-text">Ingest feedback from the market. Speak with the sales team. Analyze data. Translate to product enhancements.</p>
+              </div>
+            </div>
+    			</div>
+        </div>
 	  	</section>
 
-  		<section class="container fadeInBlock d-flex flex-column justify-content-center align-items-center" id="tools">
+  		<section class="container-fluid fadeInBlock d-flex flex-column justify-content-center align-items-center" id="tools">
     		<div class="row d-flex flex-sm-row-reverse">
     			<div class="col-md-4 d-flex flex-column justify-content-center">
     				<h1 class="text-center">TOOLS</h1>
             <img src="imgs/line.png" class="d-block mb-3 mx-auto img-fluid">
   					<p class="text-center">
-            It's amazing what you can accomplish when you have the right tool for the job.
+            When you have the right tools for the job it allows you to focus on the things that matter most.
             That's why I am constantly trying to expand the options I have at my disposal,
             or working to have a deeper understanding of what the teams I partner with are using.
             Here is a sampling of some of the software, platforms and frameworks that I either use
@@ -156,12 +159,13 @@
     				<h1 class="text-center mt-3">PROJECTS</h1>
             <img src="imgs/line.png" class="d-block mb-3 mx-auto img-fluid">
     				<p>
-      			The early days of my professional life didn't require an understanding of code. Since 2017 I've dedicated countless hours to taking online classes and studying to make up for this fact.
-            But I didn't want to just <i>know</i> how to do something, I wanted to prove that I could get hands on as well.  It's why I built this site from scratch and why I create
-            sample projects to apply new-found skills.<br><br>
+      			The early days of my professional life didn't require an understanding of code. Since 2017
+            I've dedicated countless hours to taking online classes and studying to make up for this fact.
+            But I didn't want to just <i>know</i> how to do something, I wanted to prove that I could get
+            hands on as well.  It's why I built this site from scratch and why I create sample projects to
+            apply new-found skills.<br><br>
 
-            Understanding areas such as version control, front and back-end communication, API development, and databases has had a tremendous impact on the dialogue I can have
-            with technical teams.<br><br>
+            Understanding areas such as version control, front and back-end development, frameworks, and databases has had a tremendous impact on the dialogue I have with technical teams.<br><br>
 
       			Click on an image to view more information about each project.
     				</p>
@@ -255,7 +259,7 @@
 
 		<section class="container-fluid fadeInBlock" id="more">
   			<div class="col-md-6 mx-auto" id="contact">
-  				<h1 class="text-center">CONTACT</h1>
+  				<h1 class="text-center sectionTitle">CONTACT</h1>
           <img src="imgs/line.png" class="d-block mb-3 mx-auto img-fluid">
 					<form class="needs-validation" id="contact-form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScWvcW0Rk-hqbGCYWSB8L2YxB08avEcEdhgeYaTsB3onN519A/formResponse" target="_blank" novalidate>
   					<div>

@@ -2,6 +2,7 @@
 console.log("I'm linked!");
 
 $(document).ready(function() {
+	$('.hidden').hide();
 	$("#jumbo-text").fadeIn(1500);
 	$( ".nav-link" ).first().delay(800).fadeIn( "slow", function showNext() {
 		$(this).next(".nav-link").fadeIn("slow", showNext);
@@ -47,6 +48,16 @@ $(function() {
 	});
 });
 
+
+$('#moreBioButton').click(() => {
+  if ($('#moreBioButton').attr('value') === "Read More") {
+    $('#moreBio').show();
+    $('#moreBioButton').attr('value',"See Less");
+  } else {
+    $('#moreBio').hide();
+    $('#moreBioButton').attr('value',"Read More");
+  }
+});
 
 
 $('#thBadgeButton').click(function() {
