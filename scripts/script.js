@@ -51,10 +51,10 @@ $(function() {
 
 $('#moreBioButton').click(() => {
   if ($('#moreBioButton').attr('value') === "Read More") {
-    $('#moreBio').show();
+    $('#moreBio').slideDown();
     $('#moreBioButton').attr('value',"See Less");
   } else {
-    $('#moreBio').hide();
+    $('#moreBio').slideUp();
     $('#moreBioButton').attr('value',"Read More");
   }
 });
