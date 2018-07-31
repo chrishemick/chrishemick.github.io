@@ -110,7 +110,7 @@ section {
 }
 
 #tools {
-  background: url("imgs/tools.jpg") no-repeat center;
+  background: url("imgs/tools.jpg") no-repeat left;
   background-size: cover;
 }
 
@@ -174,10 +174,14 @@ section {
 }
 
 .toolLogo {
-  width: 25%;
+  width: 40%;
   height: auto;
 }
 
+.projectLogo {
+  width: 10%;
+  height: auto;
+}
 
 #learning {
   /*
@@ -187,6 +191,7 @@ section {
   background-image: url("imgs/books1.jpg"),linear-gradient(rgba(199,69,237,0.8),rgba(199,69,237,0.8));
   background-blend-mode: overlay;
   background-size: cover;
+  background-position: center;
 }
 
 #thBadgeButton {

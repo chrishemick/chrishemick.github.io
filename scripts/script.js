@@ -7,7 +7,7 @@ $(document).ready(function() {
 	/*$( ".nav-link" ).first().delay(800).fadeIn( "slow", function showNext() {
 		$(this).next(".nav-link").fadeIn("slow", showNext);
 	});*/
-	$('#learnMoreBtn').delay(1500).slideDown("slow");
+	$('#learnMoreBtn').delay(1000).slideDown("slow");
 
 	$("a").on('click', function(event) {
 
