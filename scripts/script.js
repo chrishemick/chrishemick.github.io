@@ -59,6 +59,15 @@ $('#moreBioButton').click(() => {
   }
 });
 
+$('#moreExpButton').click(() => {
+  if ($('#moreExpButton').attr('value') === "Read More") {
+    $('#moreExp').slideDown();
+    $('#moreExpButton').attr('value',"See Less");
+  } else {
+    $('#moreExp').slideUp();
+    $('#moreExpButton').attr('value',"Read More");
+  }
+});
 
 $('#thBadgeButton').click(function() {
 	$(this).attr("disabled", true).val("Getting badges...");

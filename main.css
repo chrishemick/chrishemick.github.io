@@ -15,7 +15,7 @@ section {
 }
 
 .jumbotron {
-  background: url("imgs/projects.jpg") no-repeat center;
+  background: url("imgs/projects2.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   /*margin-bottom: -70px;*/
@@ -54,20 +54,20 @@ section {
   border: 1px solid yellowgreen;
 }
 
-#whoIam, #tools {
+section {
   min-height: 90vh;
   /*margin-bottom: -70px;*/
 }
 
 #whoIam {
   color: #FFF;
-  background-image: url("imgs/about2.png"), linear-gradient(rgba(154,205,50,0.8),rgba(154,205,50,0.8));
+  background-image: url("imgs/about2.jpg"), linear-gradient(rgba(154,205,50,0.8),rgba(154,205,50,0.8));
   background-blend-mode: overlay;
   background-size: cover;
   margin-top: -32px;
 }
 
-#moreBioButton {
+#moreBioButton, #moreExpButton {
   /*color: rgb(199,69,237);*/
   color: #FFF;
   border: 1px solid rgb(199,69,237);
@@ -75,7 +75,7 @@ section {
 }
 
 #approach {
-  background-image: url("imgs/contact_background.png"), linear-gradient(rgba(199,69,237,0.8),rgba(199,69,237,0.8));
+  background-image: url("imgs/contact_background.jpg"), linear-gradient(rgba(199,69,237,0.8),rgba(199,69,237,0.8));
   background-blend-mode: overlay;
   background-size: cover;
   min-height: 90vh;
@@ -110,7 +110,7 @@ section {
 }
 
 #tools {
-  background: url("imgs/background.jpg") no-repeat center;
+  background: url("imgs/tools.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -178,11 +178,16 @@ section {
   height: auto;
 }
 
-/*
+
 #learning {
-  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+  /*
+  background: url("imgs/books1.jpg") no-repeat center;
+  background-size: cover;
+  */
+  background-image: url("imgs/books1.jpg"),linear-gradient(rgba(199,69,237,0.8),rgba(199,69,237,0.8));
+  background-blend-mode: overlay;
+  background-size: cover;
 }
-*/
 
 #thBadgeButton {
   display: block;
@@ -195,7 +200,8 @@ section {
 
 #more {
   padding-bottom: 0;
-  /*background-color: rgb(26,184,78);*/
+  background: url("imgs/pad.jpg") no-repeat center;
+  background-size: cover;
 }
 
 footer {
@@ -233,11 +239,7 @@ footer {
 
 @media (min-width: 768px) {
 
-  .jumbotron, #whoIam, #approach, #tools {
-    background-attachment: fixed;
-  }
-
-  #whoIam {
+  .jumbotron, #whoIam, #approach, #tools, #learning, #more {
     background-attachment: fixed;
   }
 
