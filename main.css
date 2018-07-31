@@ -182,7 +182,12 @@ section {
   width: 10%;
   height: auto;
 }
-
+/*
+#projects {
+  background: url("imgs/background.jpg") no-repeat center;
+  background-size: cover;
+}
+*/
 #learning {
   /*
   background: url("imgs/books1.jpg") no-repeat center;
@@ -205,7 +210,12 @@ section {
 
 #more {
   padding-bottom: 0;
+  /*
   background: url("imgs/pad.jpg") no-repeat center;
+  background-size: cover;
+  */
+  background-image: url("imgs/pad.jpg"), linear-gradient(rgba(154,205,50,0.8),rgba(154,205,50,0.8));
+  background-blend-mode: overlay;
   background-size: cover;
 }
 
