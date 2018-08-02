@@ -80,13 +80,10 @@ $('#thBadgeButton').click(function() {
 			let earnedDate = new Date(badge.earned_date).toDateString();
 
 			badgeHTML += `
-				<div class="card bg-light">
+				<div class="card">
 					<img class="card-img-top badges img-fluid p-1 mx-auto" src="${badge.icon_url}" alt="Badge Image">
 						<div class="card-body">
 							<h5 class="card-title text-center">${badge.name}</h5>
-						</div>
-						<div class="card-footer bg-light">
-							<p class="card-text text-center"><small class="text-muted">Earned: ${earnedDate}</small></p>
 						</div>
 				</div>`;
 		});
@@ -107,3 +104,10 @@ form.addEventListener('submit', function(e) {
   }
   form.classList.add('was-validated');
 });
+
+/*
+REMOVED FROM TH BADGE RETRIEVAL
+<div class="card-footer bg-light">
+	<p class="card-text text-center"><small class="text-muted">Earned: ${earnedDate}</small></p>
+</div>
+*/

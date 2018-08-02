@@ -51,7 +51,7 @@ section {
 
 .sectionTitle {
   color: #FFF;
-  border: 1px solid yellowgreen;
+  border-bottom: 1px solid yellowgreen;
 }
 
 section {
@@ -67,10 +67,19 @@ section {
   margin-top: -32px;
 }
 
-#moreBioButton, #moreExpButton {
+#moreBioButton {
   /*color: rgb(199,69,237);*/
+  font-family: 'Alfa Slab One', cursive;
   color: #FFF;
-  border: 1px solid rgb(199,69,237);
+  border: 4px solid rgb(199,69,237);
+  display: block;
+}
+
+#moreExpButton {
+  /*color: rgb(199,69,237);*/
+  font-family: 'Alfa Slab One', cursive;
+  color: #FFF;
+  border: 4px solid yellowgreen;
   display: block;
 }
 
@@ -81,7 +90,7 @@ section {
   min-height: 90vh;
 }
 
-#approach .card {
+.card {
   color: #FFF;
   background-color: rgba(105,26,184,0.4);
 }
@@ -112,6 +121,10 @@ section {
 #tools {
   background: url("imgs/tools.jpg") no-repeat left;
   background-size: cover;
+}
+
+#projectSectionTitle {
+  color: black;
 }
 
 .project {
@@ -200,7 +213,10 @@ section {
 }
 
 #thBadgeButton {
+  font-family: 'Alfa Slab One', cursive;
   display: block;
+  color: #FFF;
+  border: 4px solid yellowgreen;
 }
 
 .badges {
@@ -217,6 +233,14 @@ section {
   background-image: url("imgs/pad.jpg"), linear-gradient(rgba(154,205,50,0.8),rgba(154,205,50,0.8));
   background-blend-mode: overlay;
   background-size: cover;
+}
+
+#contactButton {
+  /*color: rgb(199,69,237);*/
+  font-family: 'Alfa Slab One', cursive;
+  color: #FFF;
+  border: 4px solid rgb(199,69,237);
+  display: block;
 }
 
 footer {
