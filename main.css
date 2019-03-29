@@ -69,7 +69,7 @@ section {
 
 #moreBioButton {
   /*color: rgb(199,69,237);*/
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Monoton', cursive;
   background-color: rgb(199,69,237);
   color: #FFF;
   border: 2px solid rgb(199,69,237);
@@ -84,7 +84,7 @@ section {
 
 #moreExpButton {
   /*color: rgb(199,69,237);*/
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Monoton', cursive;
   background-color: yellowgreen;
   color: #FFF;
   border: 2px solid yellowgreen;
@@ -227,7 +227,7 @@ section {
 }
 
 #thBadgeButton {
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Monoton', cursive;
   display: block;
   color: #FFF;
   border: 4px solid yellowgreen;
@@ -251,7 +251,7 @@ section {
 
 #contactButton {
   /*color: rgb(199,69,237);*/
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Monoton', cursive;
   color: #FFF;
   border: 4px solid rgb(199,69,237);
   display: block;
