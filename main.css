@@ -23,7 +23,12 @@ section {
 
 #jumbo-text, #learnMoreBtn {
   display: none;
-  font-family: 'Alfa Slab One', cursive;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#heroName {
+  transform: rotate(-10deg);
+  padding: 0.25em .25em;
 }
 
 #learnMoreBtn {
@@ -69,7 +74,7 @@ section {
 
 #moreBioButton {
   /*color: rgb(199,69,237);*/
-  font-family: 'Monoton', cursive;
+  font-family: 'Permanent Marker', cursive;
   background-color: rgb(199,69,237);
   color: #FFF;
   border: 2px solid rgb(199,69,237);
@@ -84,7 +89,7 @@ section {
 
 #moreExpButton {
   /*color: rgb(199,69,237);*/
-  font-family: 'Monoton', cursive;
+  font-family: 'Permanent Marker', cursive;
   background-color: yellowgreen;
   color: #FFF;
   border: 2px solid yellowgreen;
