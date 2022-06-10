@@ -174,6 +174,12 @@ section {
   margin-bottom: -3em;
 }
 
+.carousel-caption {
+  background-color: rgba(255,255,255,0.85);
+  border: 2px dotted rgba(105,26,184,0.8);
+  border-radius: 25px;
+}
+
 /*
 #project2 {
   background: url("imgs/building_site2.jpg") no-repeat center;
